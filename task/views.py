@@ -10,7 +10,7 @@ class CategoryViewSet(viewsets.ModelViewSet):
 
 
 class SubcategoryViewSet(viewsets.ModelViewSet):
-    queryset = Subcategory.oblects.all()
+    queryset = Subcategory.objects.all()
     serializer_class = SubcategorySerializer
 
 
