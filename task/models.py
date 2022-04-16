@@ -15,3 +15,4 @@ class Advertisement(models.Model):
     title = models.CharField(max_length=240)
     description = models.TextField()
     category = models.ForeignKey("task.Subcategory", on_delete=models.CASCADE)
+    created_at = models.DateTimeField()
